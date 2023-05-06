@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Products | Stadium</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="./favicon.ico">
+        <!--Add fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./assests/css/style.css">
+    </head>
+    <body>
+       <header>
+            <nav>
+                <div class="left-nav">
+                    <img class="logo" src="./assests/img/logo.png" alt="stadium logo" />
+                </div>
+                <div class="right-nav">
+                    <ul class="nav-items">
+                        <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="./products.html" class="nav-link">Visit Products</a></li>
+                        <li class="nav-item" onclick="contactForm()"><a href="#contact">Contact us</a></li>
+                        <li class="nav-item"><a href="./privacy.html" class="nav-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </nav>
+       </header>
+       
+       <!--Contact form-->
+       <form id="contact" class="contact">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter Your Full Name" required/>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="example@email.com" required/>
+        <label for="query">Message:</label>
+        <textarea id="query" required></textarea>
+
+        <button class="send" type="submit" value="Submit">Send</button>
+        <button class="cancel" onclick="cancelForm()">X</button>
+       </form>
+
+       <main class="main">
+        <section id="products" class="products"></section>
+       </main>
+       <footer>
+        <nav>
+            <div class="left-footer">
+                <img class="footer-logo" src="./assests/img/logo.png" alt="stadium logo" />
+                <h3 class="brand">Stadium Energy Drinks</h3>
+            </div>
+            <div class="right-footer">
+                <ul class="footer-items">
+                    <li class="footer-item"><a href="./index.html" class="nav-link">Home</a></li></li>
+                    <li class="footer-item"><a href="./products.html" class="nav-link">Visit Products</a></li>
+                    <li class="footer-item" onclick="contactForm()"><a href="#contact">Contact us</a></li>
+                    <li class="footer-item"><a href="./privacy.html" class="nav-link">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h6>&copy;2023 Stadium pvt.ltd. All rights reserved</h6>
+       </footer>
+        <script type="module" src="./assests/js/product.js"></script>
+        <script src="./assests/js/script.js"></script>
+    </body>
+</html>

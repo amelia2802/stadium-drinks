@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home | Stadium</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="./favicon.ico">
+        <!--Add fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./assests/css/style.css">
+    </head>
+    <body>
+       <header>
+            <nav>
+                <div class="left-nav">
+                    <img class="logo" src="./assests/img/logo.png" alt="stadium logo" />
+                </div>
+                <div class="right-nav">
+                    <ul class="nav-items">
+                        <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="./products.html" class="nav-link">Visit Products</a></li>
+                        <li class="nav-item" onclick="contactForm()"><a href="#contact">Contact us</a></li>
+                        <li class="nav-item"><a href="./privacy.html" class="nav-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </nav>
+       </header>
+       
+       <!--Contact form-->
+       <form id="contact" class="contact">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter Your Full Name" required/>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="example@email.com" required/>
+        <label for="query">Message:</label>
+        <textarea id="query" required></textarea>
+
+        <button class="send" type="submit" value="Submit">Send</button>
+        <button class="cancel" onclick="cancelForm()">X</button>
+       </form>
+       <main class="main">
+            <section class="wrapper">
+                <div class="slides">
+                    <img id="content1" class="slide-img active" src="./assests/img/A photo of colorful soft drink cans.png" alt="A photo of colorful soft drink cans">
+                </div>
+                <div class="slides">
+                    <img id="content2" class="slide-img" src="./assests/img/A photo of colorful soft drink cans (1).png" alt="A photo of colorful soft drink cans">
+                </div>
+                <div class="slides">
+                    <img id="content3" class="slide-img" src="./assests/img/A couple jogging in a park, each holding a can of Energy Drinks with sweat on their foreheads..png" alt="A photo of colorful soft drink cans">
+                </div>
+                <div class="slides">
+                    <img id="content4" class="slide-img" src="./assests/img/Untitled design (2).png" alt="A photo of colorful soft drink cans">
+                </div>
+            </section>
+            <div class="dot-container">
+                <button class="dot" onclick = "dot(1)"></button>
+                <button class="dot" onclick = "dot(2)"></button>
+                <button class="dot" onclick = "dot(3)"></button>
+                <button class="dot" onclick = "dot(4)"></button>
+            </div>
+
+            <section class="about-us">
+                <h1>Our Mission</h1>
+                <article>Our mission at Stadium is to provide couples in Africa with a delicious and energizing beverage that is free from animal cruelty and harmful substances. We are committed to using only the freshest and most natural ingredients to create a fruit punch energy drink that delivers a healthy boost of energy without the use of alcohol or harmful chemicals. We aim to become a trusted name in the beverage industry, recognized for our commitment to quality, sustainability, and social responsibility.</article>
+                <h1 class="vision">Our Vision</h1>
+                <article>Our vision at Stadium is to become the leading non-alcoholic energy drink brand in Africa, known for our commitment to cruelty-free and sustainable production methods. We believe that every person deserves a healthy and energizing beverage that is free from animal cruelty and harmful substances. We aim to make a positive impact on our community and the environment by sourcing our ingredients responsibly and reducing our carbon footprint. We are dedicated to creating a better future for ourselves and our customers by providing a refreshing and healthy alternative to traditional energy drinks.</article>
+                <h1 class="value">Our Values</h1>
+                <article>At Stadium, we value sustainability, innovation, and ethical production methods. We are committed to using only the freshest and most natural ingredients, and we believe in minimizing our impact on the environment by sourcing our ingredients responsibly and reducing waste. We are dedicated to innovation and are constantly looking for new and better ways to create a delicious and energizing beverage that our customers will love. Above all, we value ethical production methods and are committed to creating a product that is free from animal cruelty and harmful substances.</article>
+            </section>
+       </main>
+       <footer>
+        <nav>
+            <div class="left-footer">
+                <img class="footer-logo" src="./assests/img/logo.png" alt="stadium logo" />
+                <h3 class="brand">Stadium Energy Drinks</h3>
+            </div>
+            <div class="right-footer">
+                <ul class="footer-items">
+                    <li class="footer-item"><a href="./index.html" class="nav-link">Home</a></li></li>
+                    <li class="footer-item"><a href="./products.html" class="nav-link">Visit Products</a></li>
+                    <li class="footer-item" onclick="contactForm()"><a href="#contact">Contact us</a></li>
+                    <li class="footer-item"><a href="./privacy.html" class="nav-link">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h6>&copy;2023 Stadium pvt.ltd. All rights reserved</h6>
+       </footer>
+
+        <script  src="./assests/js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Privacy | Stadium</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="./favicon.ico">
+        <!--Add fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./assests/css/style.css">
+    </head>
+    <body>
+       <header>
+            <nav>
+                <div class="left-nav">
+                    <img class="logo" src="./assests/img/logo.png" alt="stadium logo" />
+                </div>
+                <div class="right-nav">
+                    <ul class="nav-items">
+                        <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="./products.html" class="nav-link">Visit Products</a></li>
+                        <li class="nav-item" onclick="contactForm()"><a href="#contact">Contact us</a></li>
+                        <li class="nav-item"><a href="./privacy.html" class="nav-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </nav>
+       </header>
+
+        <!--Contact form-->
+        <form id="contact" class="contact">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter Your Full Name" required/>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="example@email.com" required/>
+            <label for="query">Message:</label>
+            <textarea id="query" required></textarea>
+    
+            <button class="send" type="submit" value="Submit">Send</button>
+            <button class="cancel" onclick="cancelForm()">X</button>
+        </form>
+       <main class="main">
+        <section class="about-us">
+            <h1>Privacy Policy for Stadium Energy Drinks</h1>
+            <article>At Stadium, we are committed to protecting your privacy and ensuring the security of your personal information. This privacy policy describes the types of personal information we may collect, how we use that information, and how we protect it.</article>
+            <h1 class="vision">Collection of Information</h1>
+            <article>We may collect personal information such as your name, email address, and shipping address when you place an order on our website. We may also collect non-personal information such as your IP address, browser type, and operating system to help us improve our website and provide better service.</article>
+            <h1 class="value">Use of Information</h1>
+            <article>We use your personal information to process your orders, communicate with you about your orders, and improve our products and services. We may also use your personal information to send you promotional materials and special offers that we think may be of interest to you. You may opt-out of receiving these communications at any time.</article>
+            <h1>Protection of Information</h1>
+            <article>We take the security of your personal information seriously and use industry-standard encryption technology to protect it. We do not share your personal information with third parties except as necessary to process your orders and comply with legal requirements.</article>
+            <h1>Cookies</h1>
+            <article>Our website may use cookies to enhance your browsing experience and personalize your experience on our website. Cookies are small files that are stored on your computer and help us understand how you use our website. You may disable cookies in your browser settings, but this may limit your ability to use some features of our website.</article>
+            <h1>Changes to Privacy Policy</h1>
+            <article>We may update this privacy policy from time to time to reflect changes in our business practices or legal requirements. Any changes to this policy will be posted on our website.</article>
+        </section>
+   </main>
+   <footer>
+    <nav>
+        <div class="left-footer">
+            <img class="footer-logo" src="./assests/img/logo.png" alt="stadium logo" />
+            <h3 class="brand">Stadium Energy Drinks</h3>
+        </div>
+        <div class="right-footer">
+            <ul class="footer-items">
+                <li class="footer-item"><a href="./index.html" class="nav-link">Home</a></li></li>
+                    <li class="footer-item"><a href="./products.html" class="nav-link">Visit Products</a></li>
+                    <li class="footer-item" onclick="contactForm()"><a href="#contact">Contact us</a></li>
+                    <li class="footer-item"><a href="./privacy.html" class="nav-link">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h6>&copy;2023 Stadium pvt.ltd. All rights reserved</h6>
+   </footer>
+
+   <script  src="./assests/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+:root{
+    --brand-color:#d8e2dc;
+    --accent-color:#96031a;
+    --smokey:#b8b9b9;
+    --navy:#14213d;
+    --gray-pink:#f4acb7;
+    --sunflower:#ffee32;
+    --vibe:#1b1b1e;
+}
+*{
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    max-height: 18em;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--brand-color);
+    font-family: monospace;
+}
+
+.left-nav{
+    display: flex;
+}
+
+.logo{
+    width: 6.7em;
+    position: absolute;
+}
+
+.right-nav{
+    float: right;
+}
+
+.nav-items{
+    display: flex;
+    margin-right: .3em;
+    font-size: 1.8rem;
+    list-style: none;
+}
+
+.nav-item{
+    margin-right: 1em;
+}
+
+.nav-item a{
+    color: var(--vibe);
+}
+
+.footer-item a{
+    color: #fff;
+}
+
+.nav-item:hover,a:hover{
+    background-color: var(--vibe);
+    border-bottom: 3px solid var(--sunflower);
+    color: var(--brand-color);
+}
+
+main{
+    width: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    position: relative;
+}
+
+.slide-img{
+    width: 100%;
+    max-height: 43em;
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.dot-container{
+    width: 7em;
+    margin: 20px auto 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dot{
+    outline: none;
+    cursor: pointer;
+}
+
+.dot-container button{
+    height: 15px;
+    width: 50px;
+    border-radius: 100%;
+    border: 3px solid var(--smokey);
+    background-color: transparent;
+    margin-left: 5px;
+}
+
+.dot-container button:nth-child(1){
+    background-color: var(--accent-color);
+}
+
+.about-us{
+    min-width: 90vw;
+    min-height: 100vh;
+    display: block;
+    border:1rem double var(--navy);
+    padding: 1rem;
+    margin: 1rem;
+    z-index: -1;
+}
+
+.about-us h1{
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Playfair Display', serif;
+}
+
+.about-us article{
+    display: contents;
+    font-size: 1.8em;
+}
+
+footer{
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--vibe);
+}
+
+.left-footer{
+    display: flex;
+    color: var(--brand-color);
+    padding:1rem;
+    width: 30%;
+    position: absolute;
+}
+
+.footer-logo{
+    width: 10em;
+}
+
+.right-footer{
+    width: 50%;
+    display: flex;
+    color: var(--brand-color);
+    font-size: 2rem;
+    float: right;
+}
+
+.footer-item{
+    margin-bottom: 1rem;
+}
+
+h6{
+    color: white;
+    position: absolute;
+    margin-top: 13rem;
+    font-size: 1.3rem;
+}
+
+.contact{
+    width: 50%;
+    max-height: auto;
+    display: none;
+    flex-direction: column;
+    border: 1px solid gainsboro;
+    position: absolute;
+    margin: 9rem 28rem;
+    z-index: 1;
+    padding: 3rem;
+    border-radius: 2%;
+    box-shadow: 5px 1rem 10px var(--smokey);
+    background-color: #f8f9d2;
+    background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
+}
+
+.cancel{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    position: absolute;
+    right: 2rem;
+    border: 2px solid var(--accent-color);
+    background-color: transparent;
+    color: var(--accent-color);
+    font-size: 1rem;
+    top: 1rem;
+}
+
+.cancel:hover{
+    background-color: var(--accent-color);
+    color: #fff;
+}
+label{
+    font-size: 1.9rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+}
+
+input{
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+textarea{
+    padding:4rem 1rem;
+    font-size: 1.2rem;
+}
+
+.send{
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 1rem;
+    background-color: var(--accent-color);
+    color: var(--brand-color);
+    font-size: 1.3rem;
+}
+
+#products{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+}
+
+.product-card{
+    height: auto;
+    border: 1px solid gainsboro;
+    margin: 7px;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border-radius: 3%;
+    box-shadow: .5px 4px 9px gray;
+    padding: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.product-pic{
+    width: 100%;
+    height: 23em;
+    border-radius: 3%;
+    box-shadow: 1px 10px 13px gainsboro;
+}
+
+
+#order{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: .5px 5px 9px gray;
+    background-color: #fce043;
+background-image: linear-gradient(315deg, #fce043 0%, #fb7ba2 74%);
+}
+
+#order:hover{
+    background-image: linear-gradient(315deg,#fb7ba2  0%,  #fce043 74%);
+}
+
+@media  (max-width: 540px){
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    header{
+        width: 100%;
+        max-height: 100%;
+        display:flex;
+        background-color: var(--brand-color);
+        font-family: monospace;
+    }
+    
+    .left-nav{
+        display: block;
+    }
+    
+    .logo{
+        width: 10em;
+        position: absolute;
+    }
+    
+    .right-nav{
+        float: left;
+    }
+    
+    .nav-items{
+        display: block;
+        margin: 6em 0 0 3em;
+        font-size: 1.4rem;
+        list-style: none;
+    }
+    
+    .nav-item{
+        margin-bottom: 1em;
+        border-bottom: 4px dotted var(--navy);
+    }
+    main{
+        width: 100%;
+        height:auto;
+    }
+
+    .slide-img{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .dot-container{
+        width: 4em;
+    }
+
+    .about-us{
+        width: 91%;
+        height: auto;
+        border:none;
+        padding: 0;
+        margin: 1rem;
+        z-index: -1;
+    }
+
+    .about-us h1{
+        text-align: center;
+        font-size: 1.5em;
+        border: .6rem double var(--navy);
+    }
+
+    .about-us article{
+        font-size: 1em;
+    }
+
+    footer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left-footer{
+        display: block;
+        padding:0;
+        width: 100%;
+        position: relative;
+    }
+
+    .footer-logo{
+        width: 6em;
+    }
+
+    .right-footer{
+        width: 100%;
+        display: flex;
+        font-size: 1.7rem;
+        float: left;
+    }
+
+    h6{
+        position: relative;
+        margin: 0;
+        font-size: 1rem;
+        bottom: 0;
+        width: 20%;
+    }
+
+    .contact{
+        width: 90%;
+        max-height: auto;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    label{
+        font-size: 1.2rem;
+        margin-bottom: .5rem;
+    }
+    input{
+        padding: .5rem;
+        font-size: 1rem;
+    }
+    
+    textarea{
+        padding:1rem;
+        font-size: 1rem;
+    }
+    
+    .send{
+        max-width: 100%;
+        padding: .5rem;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    #products{
+        display: block;
+    }
+
+    .product-pic{
+        height: 15rem;
+    }  
+}
